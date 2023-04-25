@@ -7,7 +7,7 @@ int ImprimirMenu(){
   printf("\n------ BIBLIOTECA ------\n");
   printf("Escolha uma opcao:\n");
   printf("1 - Cadastrar livro\n");
-  printf("2 - Remover livros\n");
+  printf("2 - Remover livro\n");
   printf("3 - Buscar e imprimir livro\n");
   printf("4 - Emprestar livro\n");
   printf("5 - Devolver livro\n");  
@@ -23,7 +23,6 @@ tBiblioteca ImprimirBiblioteca(tBiblioteca biblioteca){
   int i;
   for(i=0;i<MAX_LIVROS;i++){
     if(biblioteca.livros[i].id>0){
-      //imprimir livro
       ImprimirLivro(biblioteca.livros[i]);
     }
   } 
